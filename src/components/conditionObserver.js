@@ -66,7 +66,6 @@ const conditionObserver= {
 
    
     subscribe: setState =>{
-        console.log(setState);
         return subject.subscribe(setState);
     } ,
     

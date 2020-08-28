@@ -12,7 +12,6 @@ const Main=()=> {
         
       },[]);
     
-      console.log(condition);
     return (
         <div className="main">
             <h3>Main content</h3>
