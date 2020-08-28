@@ -6,7 +6,7 @@ import '../styles/Main.css';
 import {stateSetter} from '../services/stateService';
 const Main=()=> {
     const [condition, setCondition] = useState(conditionObserver.initialState);
-    
+    conditionObserver.init();
     useLayoutEffect(()=> {
         conditionObserver.subscribe(setCondition);
         

@@ -3,7 +3,6 @@ var duration=parseInt(100+1900*Math.random());
 const tmp_emitter1=()=>{
      duration=parseInt(100+1900*Math.random());     
      setTimeout(tmp_emitter1,duration);
-
      Emitter.emit('air_pressure', parseInt(100*Math.random()));
 };
 setTimeout(tmp_emitter1,duration);

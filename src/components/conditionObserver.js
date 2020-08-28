@@ -59,13 +59,13 @@ const pre_emit=(item,newValue)=>{
 };
 var emitOut=()=>{
     state.status=0;
-    console.log(state);
     subject.next(state);
 };
 const conditionObserver= {
 
    
-    subscribe: setState =>{
+    subscribe: setState =>{     
+
         return subject.subscribe(setState);
     } ,
     
